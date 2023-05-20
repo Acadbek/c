@@ -3,8 +3,12 @@
 int main() {
 
 	int cola;
-	scanf("%d", &cola);
-	printf("%d\n", cola > 0);
+	scanf("%d",&cola);
+	printf("%d", cola);
+
+	if(cola > 0){
+		printf("oka cola bering");
+	};
 
 	return 0;
 }
