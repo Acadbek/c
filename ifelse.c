@@ -4,7 +4,7 @@ int main() {
 
 	int cola;
 
-	scanf("%d",&cola);
+	scanf("%d", &cola);
 	
 	if(cola > 0){
 
