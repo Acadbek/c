@@ -18,18 +18,37 @@ int main () {
 //    }
 
 
-        int a, b;
-        printf("a = ");
-        scanf("%d", &a);
-        printf("b = ");
-        scanf("%d", &b);
+//        int a, b;
+//        printf("a = ");
+//        scanf("%d", &a);
+//        printf("b = ");
+//        scanf("%d", &b);
+//
+//        int count = 0;
+//        while (a >= b) {
+//            a -= b;
+//            count++;
+//        }
 
-        int count = 0;
-        while (a >= b) {
-            a -= b;
-            count++;
-        }
+//        printf("a uzunlikdagi kesmaga b kesmadan %d ta joshlashtirish mumkin.\n", count);
 
-        printf("a uzunlikdagi kesmaga b kesmadan %d ta joshlashtirish mumkin.\n", count);
+    int n, k;
+    printf("n = ");
+    scanf("%d", &n);
+    printf("k = ");
+    scanf("%d", &k);
+
+    int qoldiq = n;
+    int butun_qism = 0;
+
+    while (qoldiq >= k) {
+        qoldiq -= k;
+        butun_qism++;
+    }
+
+    printf("n sonining k ga bo'linishidagi qoldiq: %d\n", qoldiq);
+    printf("n sonining k ga bo'linishidagi butun qismi: %d\n", butun_qism);
+
+    return 0;
 
 }
