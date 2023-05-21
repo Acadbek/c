@@ -5,6 +5,8 @@
 
 int main () {
     int a;
+
+    goto label2;
     label:
     scanf("%d", &a);
 
@@ -13,5 +15,6 @@ int main () {
     } else {
         goto label;
     }
+    label2:
     return 0;
 }
