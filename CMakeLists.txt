@@ -8,4 +8,4 @@ add_executable(c
         cal.c
         char.c
         ifelse.c
-        task1.c)
+        task1.c ifscope.c goto.c)
