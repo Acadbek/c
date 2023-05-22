@@ -26,14 +26,13 @@ int main() {
  */
 
 // a % ga bolganda eng ozirdagi sonni olib beradi
-
-    int a = 1547;
-
-    while(a > 0) {
-        printf("%d\n", a % 10);
-
-        a = a / 10;
-    }
-
+//    int a = 1547;
+//
+//    while(a > 0) {
+//        printf("%d\n", a % 10);
+//
+//        a = a / 10;
+//    }
 
 }
+
