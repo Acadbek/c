@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+void fill (int array[]) {
+	for(int i = 0; i < 10; i++) 
+		scanf("%d", &array[i]);
+}
+
+void print(int array[]) {
+	for(int i = 0; i < 10; i++) 
+		printf("%d ", array[i]);
+	puts(" ");
+}
+
+void reverse_print(int array[]) {
+	for(int i = 10; i >= 0; i--) 
+		printf("%d ", array[i]);
+}
+
+int main () {
+	int array[10];
+
+	fill(array);
+	print(array);
+	reverse_print(array);
+
+	return 0;
+}
