@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-const int size = 5;
+const int size = 10;
 
 void fill (int a[]) {
 	for (int i = 0; i < size; i++) a[i] = rand() % 100;
@@ -13,13 +13,7 @@ void print (int a[]) {
 	puts("");
 }
 
-int sum_idx (int a[], int start) {
-	int s = 0;
-	for(int i = start; i < size; i += 2) s += a[i];
-
-	return s; 
-}
-
+// Bubble sort
 void sort (int a[]) {
 	int s;
 	for (int i = 0; i < size; i++) {
@@ -35,21 +29,12 @@ void sort (int a[]) {
 	printf("Qadamlar soni: %d\n", s);
 }
 
-int swap (int a[], int start, int stop) {
-	int s;
-	for(int i = start; i < stop; i++) s += a[i];
-	return s;
-}
-
 int main() {
 	srand(time(0));
 	int a[size];
 
 	fill(a);
-	printf("birinchi yarm - %d\n", swap(a, 0, size / 2));
-	printf("ikkinchi yarm - %d\n", swap(a, size / 2, size));
 	print(a);
-	printf("sum: %d\n", sum_idx(a, 1));
-	//sort(a);
-	//print(a);
+	sort(a);
+	print(a);
 }
