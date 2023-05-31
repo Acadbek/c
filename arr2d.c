@@ -20,10 +20,18 @@ void print (int a[row][col]) {
 	}
 }
 
-int diag_sum (int a[row][col]) {
+int diag_sum1 (int a[row][col]) {
 	int s = 0;
 	for(int i = 0; i < row; i++) s += a[i][i];
 
+	return s;
+}
+
+int diag_sum2 (int a[row][col]) {
+	int s = 0;
+	for(int i = 0, j = 2; i < col; i++, j--) {
+		s += a[i][j];
+	}
 	return s;
 }
 
@@ -32,5 +40,7 @@ int main () {
 	int a[row][col];
 	fill(a);
 	print(a);
-	printf("%d", diag_sum(a));
+	printf("%d\n", diag_sum1(a));
+	printf("%d\n", diag_sum2(a));
+	//diag_sum2(a);
 }
